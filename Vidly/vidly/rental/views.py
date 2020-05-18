@@ -14,15 +14,17 @@ def index(request):
 def details(request, movie_id):
     try:
         the_movie = Movie.objects.get(id=movie_id)
-        return render(request, 'details.html', {'test': 'It works!', 'movie' : the_movie} )
+        return render(request, 'details.html', {'test': 'It works!', 'movie' : the_movie})
     except:
         return render(request, "NotFound.html")
+
+
 def catalog(request):
     return render(request, 'catalog.html')
 
 
 def about(request):
-    return HttpResponse("Kenneth Judd")
+    return render(request, 'about.html')
 
 
 

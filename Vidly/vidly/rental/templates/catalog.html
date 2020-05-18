@@ -4,12 +4,17 @@
 
 <h2>The Movies catalog (dynamic)</h2>
 
+{% block style %}
+
+<link href="/static/styles/catalog.css" rel="stylesheet">
+{% endblock %}
+
 <div class = "catalog">
 
     <table class = "table table-bordered table-striped">
         <thead>
          <tr>
-             <th>Id</th>
+             <th id = "pic">Id</th>
              <th>Title</th>
              <th>Year</th>
              <th>Price</th>

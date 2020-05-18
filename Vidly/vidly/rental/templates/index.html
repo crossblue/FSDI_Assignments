@@ -1,20 +1,26 @@
 {% extends "layout.html" %}
 
 {% block content %}
+
+
 <h1> Vidly Catalog </h1>
 
+{% block style %}
 
+<link rel="stylesheet" href="/static/styles/index.css">
+
+{% endblock %}
 
 <h5>{{ title }}</h5>
 
-<table class = "table table-bordered table-striped">
+<table class = "table table-bordered table-striped mt-4">
    <thead>
     <tr>
         <th>Id</th>
         <th>Title</th>
         <th>Year</th>
         <th>Price</th>
-        <th>Stick </th>
+        <th>Stock </th>
     </tr>
 
    </thead>
